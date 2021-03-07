@@ -16,6 +16,7 @@ import { TaskDialogComponent } from './task-dialog/task-dialog.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { environment } from '../environments/environment';
     FormsModule,
     DragDropModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
