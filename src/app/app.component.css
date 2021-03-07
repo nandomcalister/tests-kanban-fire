@@ -7,8 +7,7 @@ mat-toolbar>span {
 }
 
 .content-wrapper {
-    max-width: 1400px;
-    margin: auto;
+    margin: 1.5em;
 }
 
 .container-wrapper {
@@ -17,8 +16,7 @@ mat-toolbar>span {
 }
 
 .container {
-    width: 400px;
-    margin: 0 25px 25px 0;
+    /* margin: 0 25px 25px 0; */
 }
 
 .list {
@@ -29,13 +27,6 @@ mat-toolbar>span {
 
 app-new-task {
     margin-bottom: 50px;
-}
-
-.empty-label {
-    font-size: 2em;
-    padding-top: 10px;
-    text-align: center;
-    opacity: 0.2;
 }
 
 .cdk-drag-animating {
